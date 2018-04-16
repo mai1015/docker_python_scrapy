@@ -19,7 +19,7 @@ RUN apk add --no-cache nodejs && npm i -g nodemon && npm uninstall -g npm
 # Install requirements
 COPY requirements.txt /app/requirements.txt
 
-RUN apk add --no-cache --virtual .build-deps build-base python-dev \
+RUN apk add --no-cache --virtual .build-deps build-base python-dev && \
 	pip install --no-cache-dir -r requirements.txt && \
 	apk del .build-deps
 
