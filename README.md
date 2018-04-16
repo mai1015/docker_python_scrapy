@@ -1,4 +1,6 @@
 # docker_python_scrapy
+[![Build Status](https://travis-ci.org/mai1015/docker_python_scrapy.svg?branch=master)](https://travis-ci.org/mai1015/docker_python_scrapy)
+
 Docker python with scrapy installed
 
 Pre-configurate python environment in docker
