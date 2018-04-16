@@ -13,7 +13,7 @@ RUN apk add --no-cache --virtual .build-deps build-base python-dev \
 RUN apk add --no-cache libxslt libjpeg-turbo
 
 # install scrapy
-RUN pip install --no-cache-dir pip install scrapy requests pillow
+RUN pip install --no-cache-dir scrapy requests pillow
 
 # Install nodemon to debug easier
 RUN apk add --no-cache nodejs && npm i -g nodemon && npm uninstall -g npm
